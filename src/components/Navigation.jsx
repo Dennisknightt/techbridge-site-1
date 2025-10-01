@@ -18,6 +18,7 @@ export default function Navigation() {
     { to: '/', label: 'Home' },
     { to: '/services', label: 'Services' },
     { to: '/about', label: 'About' },
+    { to: '/portfolio', label: 'Portfolio' },
     { to: '/contact', label: 'Contact' },
   ];
 
@@ -30,7 +31,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-br from-tech-blue to-tech-blue-light rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">TB</span>
             </div>
             <span className={`font-bold text-xl transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
@@ -46,10 +47,10 @@ export default function Navigation() {
                 className={`font-medium transition-colors ${
                   location.pathname === link.to
                     ? isScrolled
-                      ? 'text-blue-600'
+                      ? 'text-tech-blue'
                       : 'text-white border-b-2 border-white'
                     : isScrolled
-                    ? 'text-gray-700 hover:text-blue-600'
+                    ? 'text-gray-700 hover:text-tech-blue'
                     : 'text-white/90 hover:text-white'
                 }`}
               >
@@ -100,7 +101,7 @@ export default function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block py-2 px-4 rounded-lg transition-colors ${
                   location.pathname === link.to
-                    ? 'bg-blue-50 text-blue-600 font-medium'
+                    ? 'bg-blue-50 text-tech-blue font-medium'
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
               >

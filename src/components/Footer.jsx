@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-tech-blue to-tech-blue-light rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">TB</span>
               </div>
               <span className="font-bold text-xl">TechBridge</span>
@@ -35,6 +35,11 @@ export default function Footer() {
               <li>
                 <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
                   About
+                </Link>
+              </li>
+              <li>
+                <Link to="/portfolio" className="text-gray-400 hover:text-white transition-colors">
+                  Portfolio
                 </Link>
               </li>
               <li>
